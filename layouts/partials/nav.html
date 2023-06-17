@@ -1,9 +1,9 @@
 {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
 {{ end }}
-{{ with .Site.Social.email }}
-<a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>Email</a>
-{{ end }}
+<a href="{{ .Site.Language.Params.params.baseURL }}/about">About</a>
+<a href="{{ .Site.Language.Params.params.baseURL }}/about">Now</a>
+<a href="{{ .Site.Language.Params.params.baseURL }}/about">Photos</a>
 <a href="{{ .Site.Language.Params.params.blogPath }}/index.xml">RSS</a>
 
 <!-- Convert this page's translations into a dict -->
